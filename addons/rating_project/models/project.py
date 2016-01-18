@@ -90,7 +90,7 @@ class Project(models.Model):
     rating_status = fields.Selection([('no','No customer rating'), ('stage','On stage change'), ('periodic','Periodically')], 'Customer Ratings', default='no')
     rating_status_period = fields.Selection([
             ('daily','every day'), ('weekly','every week'), ('bimonthly','twice a month'), 
-            ('monthly','one a month'), ('quarterly','quarterly'), ('yearly','yearly')
+            ('monthly','once a month'), ('quarterly','quarterly'), ('yearly','yearly')
         ], 'Rating Frequency', default='monthly')
 
     @api.multi
